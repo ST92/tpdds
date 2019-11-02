@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.PolizaEntity" table="poliza" schema="tp_dds">
+        <id name="nroPoliza">
+            <column name="nro_poliza" sql-type="int(11)"/>
+        </id>
+        <property name="estadoPoliza">
+            <column name="estado_poliza" sql-type="int(11)"/>
+        </property>
+        <property name="idDom">
+            <column name="id_dom" sql-type="int(11)"/>
+        </property>
+        <property name="formaPago">
+            <column name="forma_pago" sql-type="int(11)"/>
+        </property>
+        <property name="idPoliza">
+            <column name="id_poliza" sql-type="int(11)"/>
+        </property>
+        <property name="idCobertura">
+            <column name="id_cobertura" sql-type="int(11)"/>
+        </property>
+        <property name="idCarac">
+            <column name="id_carac" sql-type="int(11)"/>
+        </property>
+        <property name="idAjusteskm">
+            <column name="id_ajusteskm" sql-type="int(11)"/>
+        </property>
+        <property name="sumaAsegurada">
+            <column name="suma_asegurada" sql-type="float" precision="-1"/>
+        </property>
+        <property name="kmAnio">
+            <column name="km_anio" sql-type="float" precision="-1"/>
+        </property>
+        <property name="fechaInicioVigencia">
+            <column name="fecha_inicio_vigencia" sql-type="date"/>
+        </property>
+        <property name="fechaFinVigencia">
+            <column name="fecha_fin_vigencia" sql-type="date"/>
+        </property>
+        <property name="premio">
+            <column name="premio" sql-type="float" precision="-1"/>
+        </property>
+        <property name="importePorDescuento">
+            <column name="importe_por_descuento" sql-type="float" precision="-1"/>
+        </property>
+        <property name="ultimoDiaPago">
+            <column name="ultimo_dia_pago" sql-type="date"/>
+        </property>
+        <property name="montoTotalAAbonar">
+            <column name="monto_total_a_abonar" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>

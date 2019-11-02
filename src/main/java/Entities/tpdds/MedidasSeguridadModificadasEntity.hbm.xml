@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.MedidasSeguridadModificadasEntity" table="medidas_seguridad_modificadas" schema="tp_dds">
+        <id name="idMedidasSeguridadM">
+            <column name="id_MedidasSeguridadM" sql-type="int(11)"/>
+        </id>
+        <property name="nroPolizaModif">
+            <column name="nro_poliza_modif" sql-type="int(11)"/>
+        </property>
+        <property name="descripcion">
+            <column name="descripcion" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="factor">
+            <column name="factor" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
