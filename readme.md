@@ -12,3 +12,6 @@ https://www.youtube.com/redirect?event=video_description&v=KHohVibqePw&q=https%3
 
 #generar entities desde la db
 https://stackoverflow.com/questions/44825619/how-can-i-generate-entities-with-intellij-without-having-a-session-factory/44827507
+
+#git tutorial
+https://backlog.com/git-tutorial/getting-started/install-git/
