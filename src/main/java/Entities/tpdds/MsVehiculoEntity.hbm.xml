@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.MsVehiculoEntity" table="ms_vehiculo" schema="tp_dds">
+        <composite-id mapped="true" class="tpdds.MsVehiculoEntityPK">
+            <key-property name="idMedidasSeguridad">
+                <column name="id_MedidasSeguridad" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idAuto">
+                <column name="id_auto" sql-type="int(11)"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

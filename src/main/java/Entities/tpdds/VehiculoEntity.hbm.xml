@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.VehiculoEntity" table="vehiculo" schema="tp_dds">
+        <id name="idAuto">
+            <column name="id_auto" sql-type="int(11)"/>
+        </id>
+        <property name="idModelo">
+            <column name="id_modelo" sql-type="int(11)"/>
+        </property>
+        <property name="anioVehiculo">
+            <column name="anio_vehiculo" sql-type="int(11)"/>
+        </property>
+        <property name="motor">
+            <column name="motor" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="chasis">
+            <column name="chasis" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="patente">
+            <column name="patente" sql-type="varchar(15)" length="15"/>
+        </property>
+    </class>
+</hibernate-mapping>

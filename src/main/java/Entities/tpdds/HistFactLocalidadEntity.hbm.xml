@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.HistFactLocalidadEntity" table="hist_fact_localidad" schema="tp_dds">
+        <composite-id mapped="true" class="tpdds.HistFactLocalidadEntityPK">
+            <key-property name="idHistFactLocalidad">
+                <column name="id_hist_fact_localidad" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idLocalidad">
+                <column name="id_localidad" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idUsuario">
+                <column name="id_usuario" sql-type="int(11)"/>
+            </key-property>
+        </composite-id>
+        <property name="factLocalidad">
+            <column name="fact_localidad" sql-type="float" precision="-1"/>
+        </property>
+        <property name="fechaInicioVigencia">
+            <column name="fecha_inicio_vigencia" sql-type="date"/>
+        </property>
+        <property name="fechaFinVigencia">
+            <column name="fecha_fin_vigencia" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

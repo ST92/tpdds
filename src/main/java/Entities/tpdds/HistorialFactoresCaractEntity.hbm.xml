@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.HistorialFactoresCaractEntity" table="historial_factores_caract" schema="tp_dds">
+        <composite-id mapped="true" class="tpdds.HistorialFactoresCaractEntityPK">
+            <key-property name="idHistCaract">
+                <column name="id_hist_caract" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idCaract">
+                <column name="id_caract" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idUsuario">
+                <column name="id_usuario" sql-type="int(11)"/>
+            </key-property>
+        </composite-id>
+        <property name="ajustePorHijo">
+            <column name="ajuste_por_hijo" sql-type="float" precision="-1"/>
+        </property>
+        <property name="derechoDeEmisión">
+            <column name="derecho_de_emisión" sql-type="float" precision="-1"/>
+        </property>
+        <property name="descuentoPorUnidadAdicional">
+            <column name="descuento_por_unidad_adicional" sql-type="float" precision="-1"/>
+        </property>
+        <property name="fechaInicioVigencia">
+            <column name="fecha_inicio_vigencia" sql-type="date"/>
+        </property>
+        <property name="fechaFinVigencia">
+            <column name="fecha_fin_vigencia" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.DomicilioRiesgoEntity" table="domicilio_riesgo" schema="tp_dds">
+        <id name="idDom">
+            <column name="id_dom" sql-type="int(11)"/>
+        </id>
+        <property name="idLocalidad">
+            <column name="id_localidad" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>
