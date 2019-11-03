@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.AjustesPorKmEntity" table="ajustes_por_km" schema="tp_dds">
+        <id name="idAjusteskm">
+            <column name="id_ajusteskm" sql-type="int(11)"/>
+        </id>
+        <property name="ajustePorKmRealizados">
+            <column name="ajuste_por_km_realizados" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>

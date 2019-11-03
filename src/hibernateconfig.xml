@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/tp_dds</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <mapping class="tpdds.AjustesPorKmEntity"/>
+    <mapping resource="src/main/Entities/tpdds/AjustesPorKmEntity.hbm.xml"/>
+    <mapping class="tpdds.ClienteEntity"/>
+    <mapping resource="src/main/Entities/tpdds/ClienteEntity.hbm.xml"/>
+    <mapping class="tpdds.CobradorEntity"/>
+    <mapping resource="src/main/Entities/tpdds/CobradorEntity.hbm.xml"/>
+    <mapping class="tpdds.CuotaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/CuotaEntity.hbm.xml"/>
+    <mapping class="tpdds.DireccionEntity"/>
+    <mapping resource="src/main/Entities/tpdds/DireccionEntity.hbm.xml"/>
+    <mapping class="tpdds.DomicilioRiesgoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/DomicilioRiesgoEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumCondIvaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumCondIvaEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumEstadoCivilEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumEstadoCivilEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumEstadoClienteEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumEstadoClienteEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumEstadoPolizaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumEstadoPolizaEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumFormaPagoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumFormaPagoEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumSexoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumSexoEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumTipoCoberturaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumTipoCoberturaEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumTipoDniEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumTipoDniEntity.hbm.xml"/>
+    <mapping class="tpdds.EnumTipoUsuarioEntity"/>
+    <mapping resource="src/main/Entities/tpdds/EnumTipoUsuarioEntity.hbm.xml"/>
+    <mapping class="tpdds.FactoresCaracteristicasEntity"/>
+    <mapping resource="src/main/Entities/tpdds/FactoresCaracteristicasEntity.hbm.xml"/>
+    <mapping class="tpdds.GerenteEntity"/>
+    <mapping resource="src/main/Entities/tpdds/GerenteEntity.hbm.xml"/>
+    <mapping resource="src/main/Entities/tpdds/HijoEntity.hbm.xml"/>
+    <mapping class="tpdds.HijoEntity"/>
+    <mapping class="tpdds.HijoModificadoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HijoModificadoEntity.hbm.xml"/>
+    <mapping class="tpdds.HistFactLocalidadEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistFactLocalidadEntity.hbm.xml"/>
+    <mapping class="tpdds.HistFactMedSegEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistFactMedSegEntity.hbm.xml"/>
+    <mapping class="tpdds.HistFactVehiculoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistFactVehiculoEntity.hbm.xml"/>
+    <mapping class="tpdds.HistorialFactAjustesPorKmEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistorialFactAjustesPorKmEntity.hbm.xml"/>
+    <mapping resource="src/main/Entities/tpdds/HistorialFactTipoCobEntity.hbm.xml"/>
+    <mapping class="tpdds.HistorialFactTipoCobEntity"/>
+    <mapping class="tpdds.HistorialFactoresCaractEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistorialFactoresCaractEntity.hbm.xml"/>
+    <mapping class="tpdds.HistorialSiniestrosFcEntity"/>
+    <mapping resource="src/main/Entities/tpdds/HistorialSiniestrosFcEntity.hbm.xml"/>
+    <mapping class="tpdds.LocalidadEntity"/>
+    <mapping resource="src/main/Entities/tpdds/LocalidadEntity.hbm.xml"/>
+    <mapping resource="src/main/Entities/tpdds/MarcaEntity.hbm.xml"/>
+    <mapping class="tpdds.MarcaEntity"/>
+    <mapping class="tpdds.MedidasSeguridadEntity"/>
+    <mapping resource="src/main/Entities/tpdds/MedidasSeguridadEntity.hbm.xml"/>
+    <mapping class="tpdds.MedidasSeguridadModificadasEntity"/>
+    <mapping resource="src/main/Entities/tpdds/MedidasSeguridadModificadasEntity.hbm.xml"/>
+    <mapping class="tpdds.ModeloEntity"/>
+    <mapping resource="src/main/Entities/tpdds/ModeloEntity.hbm.xml"/>
+    <mapping class="tpdds.MsVehiculoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/MsVehiculoEntity.hbm.xml"/>
+    <mapping resource="src/main/Entities/tpdds/PagoEntity.hbm.xml"/>
+    <mapping class="tpdds.PagoEntity"/>
+    <mapping class="tpdds.PaisEntity"/>
+    <mapping resource="src/main/Entities/tpdds/PaisEntity.hbm.xml"/>
+    <mapping resource="src/main/Entities/tpdds/PolizaEntity.hbm.xml"/>
+    <mapping class="tpdds.PolizaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/PolizaHijoEntity.hbm.xml"/>
+    <mapping class="tpdds.PolizaHijoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/PolizaModificadaEntity.hbm.xml"/>
+    <mapping class="tpdds.PolizaModificadaEntity"/>
+    <mapping class="tpdds.ProvinciaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/ProvinciaEntity.hbm.xml"/>
+    <mapping class="tpdds.SiniestrosFcEntity"/>
+    <mapping resource="src/main/Entities/tpdds/SiniestrosFcEntity.hbm.xml"/>
+    <mapping class="tpdds.TipoCoberturaEntity"/>
+    <mapping resource="src/main/Entities/tpdds/TipoCoberturaEntity.hbm.xml"/>
+    <mapping class="tpdds.TipoCoberuraModificadoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/TipoCoberuraModificadoEntity.hbm.xml"/>
+    <mapping class="tpdds.UsuarioEntity"/>
+    <mapping resource="src/main/Entities/tpdds/UsuarioEntity.hbm.xml"/>
+    <mapping class="tpdds.VehiculoEntity"/>
+    <mapping resource="src/main/Entities/tpdds/VehiculoEntity.hbm.xml"/>
+
+    <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

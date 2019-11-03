@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.CuotaEntity" table="cuota" schema="tp_dds">
+        <id name="idCuota">
+            <column name="id_cuota" sql-type="int(11)"/>
+        </id>
+        <property name="idPago">
+            <column name="id_pago" sql-type="int(11)"/>
+        </property>
+        <property name="nroPoliza">
+            <column name="nro_poliza" sql-type="int(11)"/>
+        </property>
+        <property name="numCuota">
+            <column name="num_cuota" sql-type="int(11)"/>
+        </property>
+        <property name="fechaVencimiento">
+            <column name="fecha_vencimiento" sql-type="date"/>
+        </property>
+        <property name="monto">
+            <column name="monto" sql-type="float" precision="-1"/>
+        </property>
+        <property name="recargos">
+            <column name="recargos" sql-type="float" precision="-1"/>
+        </property>
+        <property name="bonificacionPagoAdelantado">
+            <column name="bonificacion_pago_adelantado" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>

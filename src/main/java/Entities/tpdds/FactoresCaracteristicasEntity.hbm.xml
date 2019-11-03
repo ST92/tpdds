@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.FactoresCaracteristicasEntity" table="factores_caracteristicas" schema="tp_dds">
+        <id name="idCaract">
+            <column name="id_caract" sql-type="int(11)"/>
+        </id>
+        <property name="ajustePorHijo">
+            <column name="ajuste_por_hijo" sql-type="float" precision="-1"/>
+        </property>
+        <property name="derechoDeEmision">
+            <column name="derecho_de_emision" sql-type="float" precision="-1"/>
+        </property>
+        <property name="descuentoPorUnidadAdicional">
+            <column name="descuento_por_unidad_adicional" sql-type="float" precision="-1"/>
+        </property>
+    </class>
+</hibernate-mapping>

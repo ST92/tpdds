@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.HistorialSiniestrosFcEntity" table="historial_siniestros_fc" schema="tp_dds">
+        <composite-id mapped="true" class="tpdds.HistorialSiniestrosFcEntityPK">
+            <key-property name="idSiniestrosHist">
+                <column name="id_siniestros_hist" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idSiniestros">
+                <column name="id_siniestros" sql-type="int(11)"/>
+            </key-property>
+            <key-property name="idUsuario">
+                <column name="id_usuario" sql-type="int(11)"/>
+            </key-property>
+        </composite-id>
+        <property name="fechaFinVigencia">
+            <column name="fecha_fin_vigencia" sql-type="date"/>
+        </property>
+        <property name="descripcion">
+            <column name="descripcion" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="valor">
+            <column name="valor" sql-type="float" precision="-1"/>
+        </property>
+        <property name="fechaInicioVigencia">
+            <column name="fecha_inicio_vigencia" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

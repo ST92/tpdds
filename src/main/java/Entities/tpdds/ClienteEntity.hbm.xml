@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.ClienteEntity" table="cliente" schema="tp_dds">
+        <id name="idCliente">
+            <column name="id_cliente" sql-type="int(11)"/>
+        </id>
+        <property name="idEnumTipoDni">
+            <column name="id_enumTipoDni" sql-type="int(11)"/>
+        </property>
+        <property name="idEnumCondIva">
+            <column name="id_enumCondIva" sql-type="int(11)"/>
+        </property>
+        <property name="idEnumCliente">
+            <column name="id_enumCliente" sql-type="int(11)"/>
+        </property>
+        <property name="idEnumSexo">
+            <column name="id_enumSexo" sql-type="int(11)"/>
+        </property>
+        <property name="idEnumEstadoCivil">
+            <column name="id_enumEstadoCivil" sql-type="int(11)"/>
+        </property>
+        <property name="idDireccion">
+            <column name="id_direccion" sql-type="int(11)"/>
+        </property>
+        <property name="dni">
+            <column name="dni" sql-type="int(11)"/>
+        </property>
+        <property name="cuilCuit">
+            <column name="cuil_cuit" sql-type="int(11)"/>
+        </property>
+        <property name="apellido">
+            <column name="apellido" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="nombre">
+            <column name="nombre" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="cantidadSiniestros">
+            <column name="cantidad_siniestros" sql-type="int(11)"/>
+        </property>
+        <property name="email">
+            <column name="email" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="profesion">
+            <column name="profesion" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="anioRegistro">
+            <column name="anio_registro" sql-type="date"/>
+        </property>
+    </class>
+</hibernate-mapping>

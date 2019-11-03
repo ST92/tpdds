@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="tpdds.PolizaModificadaEntity" table="poliza_modificada" schema="tp_dds">
+        <id name="nroPolizaModif">
+            <column name="nro_poliza_modif" sql-type="int(11)"/>
+        </id>
+        <property name="nroPoliza">
+            <column name="nro_poliza" sql-type="int(11)"/>
+        </property>
+        <property name="anioVehiculo">
+            <column name="anio_vehiculo" sql-type="int(11)"/>
+        </property>
+        <property name="patente">
+            <column name="patente" sql-type="varchar(9)" length="9"/>
+        </property>
+        <property name="motor">
+            <column name="motor" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="chasis">
+            <column name="chasis" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="kmAnio">
+            <column name="km_anio" sql-type="float" precision="-1"/>
+        </property>
+        <property name="numSiniestrosAnio">
+            <column name="num_siniestros_anio" sql-type="int(11)"/>
+        </property>
+        <property name="fechaInicioVigencia">
+            <column name="fecha_inicio_vigencia" sql-type="date"/>
+        </property>
+        <property name="fechaFinVigencia">
+            <column name="fecha_fin_vigencia" sql-type="date"/>
+        </property>
+        <property name="nroModificacion">
+            <column name="nro_modificacion" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -11,5 +11,14 @@ C:/Proyectos/dds/src/main/java/persistence.xml</remarks>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/tp_dds</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="dds" uuid="a225ad22-d272-4204-9f0c-a2981bed27ad">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/tp_dds</jdbc-url>
+      <driver-properties>
+        <property name="serverTimezone" value="UTC" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>
